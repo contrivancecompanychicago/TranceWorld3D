@@ -1,0 +1,457 @@
+<!--
+-  DB Script Tool
+- 2021-03-08 09:22:09
+- 
+-  HTML4 Forms for Quality_of_Life_Game Database
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Quality_of_Life_Game Forms</title>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="file.css" media="all">
+    <script type="text/javascript" src="file.js"></script>
+    -->
+
+    <style type="text/css">
+        form { background-color: #eee; padding: 10px; margin-bottom: 10px; }
+        form fieldset { border: 1px solid #CCC; }
+        form h2 { color: green; font-size: 16pt; font-variant: small-caps; }
+        .row { clear: right; display: block; padding-bottom: 8px; }
+        .label { color: #333; font-weight: bold; clear: right; display: block; }
+    </style>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div id="main">
+
+        <form id="formPlayer" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Player Form</h3>
+
+                <div class="row">
+                    <label class="label" for="id">Id</label>
+                    <input id="id" name="id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="redrace">Redrace</label>
+                    <input id="redrace" name="redrace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="yellowrace">Yellowrace</label>
+                    <input id="yellowrace" name="yellowrace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="purplerace">Purplerace</label>
+                    <input id="purplerace" name="purplerace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="greenrace">Greenrace</label>
+                    <input id="greenrace" name="greenrace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="orangerace">Orangerace</label>
+                    <input id="orangerace" name="orangerace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="bluerace">Bluerace</label>
+                    <input id="bluerace" name="bluerace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="susceptibleindividual">Susceptibleindividual</label>
+                    <input id="susceptibleindividual" name="susceptibleindividual" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="exposedindividual">Exposedindividual</label>
+                    <input id="exposedindividual" name="exposedindividual" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="infectedindividual">Infectedindividual</label>
+                    <input id="infectedindividual" name="infectedindividual" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="removedindividual">Removedindividual</label>
+                    <input id="removedindividual" name="removedindividual" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="intoxicateddriver">Intoxicateddriver</label>
+                    <input id="intoxicateddriver" name="intoxicateddriver" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formNonplayer" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Nonplayer Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="rexoedipus">Rexoedipus</label>
+                    <input id="rexoedipus" name="rexoedipus" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="lightbluerace">Lightbluerace</label>
+                    <input id="lightbluerace" name="lightbluerace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="pinkrace">Pinkrace</label>
+                    <input id="pinkrace" name="pinkrace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="brownrace">Brownrace</label>
+                    <input id="brownrace" name="brownrace" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="fred">Fred</label>
+                    <input id="fred" name="fred" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="edtdoide">Edtdoide</label>
+                    <input id="edtdoide" name="edtdoide" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="genecrispy">Genecrispy</label>
+                    <input id="genecrispy" name="genecrispy" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="hysteriaptrance">Hysteriaptrance</label>
+                    <input id="hysteriaptrance" name="hysteriaptrance" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="officermodusponens">Officermodusponens</label>
+                    <input id="officermodusponens" name="officermodusponens" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="officermodustollens">Officermodustollens</label>
+                    <input id="officermodustollens" name="officermodustollens" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="sifidious">Sifidious</label>
+                    <input id="sifidious" name="sifidious" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="imhotepbizarros">Imhotepbizarros</label>
+                    <input id="imhotepbizarros" name="imhotepbizarros" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="barryukolmar">Barryukolmar</label>
+                    <input id="barryukolmar" name="barryukolmar" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formNeighborhoods" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Neighborhoods Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="redneighborhood">Redneighborhood</label>
+                    <input id="redneighborhood" name="redneighborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="yellowneighborhood">Yellowneighborhood</label>
+                    <input id="yellowneighborhood" name="yellowneighborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="purpleneigborhood">Purpleneigborhood</label>
+                    <input id="purpleneigborhood" name="purpleneigborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="greenneighborhood">Greenneighborhood</label>
+                    <input id="greenneighborhood" name="greenneighborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="orangeneighborhood">Orangeneighborhood</label>
+                    <input id="orangeneighborhood" name="orangeneighborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="blueneighborhood">Blueneighborhood</label>
+                    <input id="blueneighborhood" name="blueneighborhood" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formSocial_Bubbles" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Social_Bubbles Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="socioeconomicstatus">Socioeconomicstatus</label>
+                    <input id="socioeconomicstatus" name="socioeconomicstatus" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="household">Household</label>
+                    <input id="household" name="household" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="race">Race</label>
+                    <input id="race" name="race" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="transportation">Transportation</label>
+                    <input id="transportation" name="transportation" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="epidemiologicalfactors">Epidemiologicalfactors</label>
+                    <input id="epidemiologicalfactors" name="epidemiologicalfactors" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="healthfactors">Healthfactors</label>
+                    <input id="healthfactors" name="healthfactors" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="needs">Needs</label>
+                    <input id="needs" name="needs" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formHealth_Factors" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Health_Factors Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="unexpectedpregnancy">Unexpectedpregnancy</label>
+                    <input id="unexpectedpregnancy" name="unexpectedpregnancy" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="measles">Measles</label>
+                    <input id="measles" name="measles" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="mumps">Mumps</label>
+                    <input id="mumps" name="mumps" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="rubella">Rubella</label>
+                    <input id="rubella" name="rubella" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="pneumonia">Pneumonia</label>
+                    <input id="pneumonia" name="pneumonia" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="diabetes">Diabetes</label>
+                    <input id="diabetes" name="diabetes" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formSocioeconomic_Status" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Socioeconomic_Status Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="bankruptcy">Bankruptcy</label>
+                    <input id="bankruptcy" name="bankruptcy" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="unemployment">Unemployment</label>
+                    <input id="unemployment" name="unemployment" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="homeinvasion">Homeinvasion</label>
+                    <input id="homeinvasion" name="homeinvasion" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="incomedrop">Incomedrop</label>
+                    <input id="incomedrop" name="incomedrop" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="incomeloss">Incomeloss</label>
+                    <input id="incomeloss" name="incomeloss" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="eviction">Eviction</label>
+                    <input id="eviction" name="eviction" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formRandom_Glucose_Levels" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>Random_Glucose_Levels Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="kentuckyfriedchicken">Kentuckyfriedchicken</label>
+                    <input id="kentuckyfriedchicken" name="kentuckyfriedchicken" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="ramenfury">Ramenfury</label>
+                    <input id="ramenfury" name="ramenfury" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+        <form id="formCOSINE_MUD_Box" class="form" enctype="multipart/form-data" method="post" action="">
+            <fieldset>
+
+                <h3>COSINE_MUD_Box Form</h3>
+
+                <div class="row">
+                    <label class="label" for="_id">_id</label>
+                    <input id="_id" name="_id" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="cosinegameforum">Cosinegameforum</label>
+                    <input id="cosinegameforum" name="cosinegameforum" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="publicnuisancecitygame">Publicnuisancecitygame</label>
+                    <input id="publicnuisancecitygame" name="publicnuisancecitygame" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="qualityoflifegames">Qualityoflifegames</label>
+                    <input id="qualityoflifegames" name="qualityoflifegames" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <label class="label" for="socialbubbles">Socialbubbles</label>
+                    <input id="socialbubbles" name="socialbubbles" class="" type="text"  value="0"/>
+                </div>
+
+                <div class="row">
+                    <input class="" type="button" value="Cancel" />
+                    <input class="" type="submit" value="Save" />
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div id="footer"></div>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
-  "name": "TranceWorld3D",
-  "version": "1.0.0",
+  "name": "tranceworld3d",
+  "version": "0.1.0",
   "description": "TRANCE Health Transformation Coach — a gamified 3D fitness backend and experience",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,11 @@
   ],
   "author": "Contrivance Company Chicago",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contrivancecompanychicago/TranceWorld3D.git"
+  },
+  "homepage": "https://github.com/contrivancecompanychicago/TranceWorld3D",
   "dependencies": {
     "express": "^4.17.1",
     "jstransformer-markdown-it": "^2.1.0",

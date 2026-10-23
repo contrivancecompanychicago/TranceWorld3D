@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple of TRANCE</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">TRANCE HEALTH</div>
+          <h1>Temple of TRANCE</h1>
+        </div>
+        <div class="status-pill">v1 backend live</div>
+      </header>
+
+      <main class="layout">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="label">Transformation Coach Platform</p>
+            <h2>3D workouts with a gamified training ritual.</h2>
+            <p>
+              Build momentum, recover through breathwork, and level up through a Peleton-like class engine.
+            </p>
+            <div class="cta-row">
+              <button id="launch-workout">Launch Temple Ride</button>
+              <button class="secondary" id="refresh-data">Refresh dashboard</button>
+            </div>
+          </div>
+          <div class="arena-wrap">
+            <div id="arena"></div>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <article class="stat-card accent">
+            <span>Live members</span>
+            <strong id="members">--</strong>
+          </article>
+          <article class="stat-card">
+            <span>Classes today</span>
+            <strong id="classes-today">--</strong>
+          </article>
+          <article class="stat-card">
+            <span>Now training</span>
+            <strong id="training-now">--</strong>
+          </article>
+          <article class="stat-card">
+            <span>Average energy</span>
+            <strong id="avg-energy">--</strong>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Workout archive</h3>
+              <span>v1 API</span>
+            </div>
+            <div id="workout-list" class="stack"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Challenges</h3>
+              <span>Level up</span>
+            </div>
+            <div id="challenge-list" class="stack"></div>
+          </div>
+
+          <div class="panel wide">
+            <div class="panel-header">
+              <h3>Leaderboard</h3>
+              <span>Top athletes</span>
+            </div>
+            <div id="leaderboard" class="leaderboard"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

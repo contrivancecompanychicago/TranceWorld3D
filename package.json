@@ -1,13 +1,22 @@
 {
-  "name": "Pug-MD-Template",
+  "name": "TranceWorld3D",
   "version": "1.0.0",
-  "description": "",
+  "description": "TRANCE Health Transformation Coach — a gamified 3D fitness backend and experience",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "node --check index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "trance",
+    "fitness",
+    "workout",
+    "threejs",
+    "gamified",
+    "backend"
+  ],
+  "author": "Contrivance Company Chicago",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

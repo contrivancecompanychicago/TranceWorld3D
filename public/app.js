@@ -2,7 +2,10 @@ const state = {
   dashboard: null,
   workouts: [],
   challenges: [],
-  leaderboard: []
+  leaderboard: [],
+  patient: null,
+  triage: null,
+  programs: []
 };
 
 async function fetchDashboard() {
@@ -12,16 +15,68 @@ async function fetchDashboard() {
   state.workouts = payload.workouts;
   state.challenges = payload.challenges;
   state.leaderboard = payload.leaderboard;
+  state.patient = payload.dashboard.patient;
+  state.triage = payload.dashboard.triage;
+  state.programs = payload.dashboard.programs;
   renderDashboard();
 }
 
 function renderDashboard() {
   if (!state.dashboard) return;
 
-  document.getElementById('members').textContent = state.dashboard.community.members.toLocaleString();
-  document.getElementById('classes-today').textContent = state.dashboard.community.classesToday.toLocaleString();
-  document.getElementById('training-now').textContent = state.dashboard.community.liveNow.toLocaleString();
-  document.getElementById('avg-energy').textContent = state.dashboard.community.avgEnergy;
+  const { patient, triage } = state.dashboard;
+
+  document.getElementById('bmi').textContent = patient.bmi.toString();
+  document.getElementById('average-glucose').textContent = patient.averageGlucose;
+  document.getElementById('triage-level').textContent = triage.level;
+  document.getElementById('goal-summary').textContent = patient.goal;
+
+  const patientMetrics = document.getElementById('patient-metrics');
+  patientMetrics.innerHTML = [
+    { label: 'Patient', value: patient.name },
+    { label: 'Condition', value: patient.condition },
+    { label: 'Weight', value: patient.weight },
+    { label: 'A1C', value: patient.a1c },
+    { label: 'Blood pressure', value: patient.bloodPressure },
+    { label: 'Focus', value: patient.recentFocus }
+  ]
+    .map(
+      (item) => `
+        <div class="metric-row">
+          <span>${item.label}</span>
+          <strong>${item.value}</strong>
+        </div>
+      `
+    )
+    .join('');
+
+  const triagePanel = document.getElementById('triage-panel');
+  triagePanel.innerHTML = `
+    <div class="triage-banner ${triage.level.toLowerCase()}">
+      <span class="alert-tag">${triage.level}</span>
+      <p>${triage.summary}</p>
+    </div>
+    <div class="action-list">
+      ${triage.actions.map((action) => `<div class="action-item">${action}</div>`).join('')}
+    </div>
+    <div class="meta dark">Fresh produce resource: ${triage.pantry}</div>
+  `;
+
+  const programList = document.getElementById('program-list');
+  programList.innerHTML = state.programs
+    .map(
+      (program) => `
+        <div class="program-row">
+          <div>
+            <div class="program-title">${program.name}</div>
+            <div class="meta">${program.category}</div>
+          </div>
+          <span class="program-badge">${program.status}</span>
+          <p class="program-copy">${program.description}</p>
+        </div>
+      `
+    )
+    .join('');
 
   const workoutList = document.getElementById('workout-list');
   workoutList.innerHTML = state.workouts

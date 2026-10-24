@@ -14,7 +14,9 @@
     "workout",
     "threejs",
     "gamified",
-    "backend"
+    "backend",
+    "firebase",
+    "health"
   ],
   "author": "Contrivance Company Chicago",
   "license": "ISC",
@@ -25,6 +27,7 @@
   "homepage": "https://github.com/contrivancecompanychicago/TranceWorld3D",
   "dependencies": {
     "express": "^4.17.1",
+    "firebase-admin": "^12.4.0",
     "jstransformer-markdown-it": "^2.1.0",
     "mapbox-gl": "^2.2.0",
     "pug": "^3.0.2"

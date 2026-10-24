@@ -9,6 +9,8 @@
   --text: #edf2ff;
   --muted: #a0aec0;
   --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f87171;
 }
 
 * {
@@ -182,7 +184,7 @@ button.secondary {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 20px;
 }
 
@@ -253,6 +255,11 @@ button.secondary {
   margin-top: 8px;
 }
 
+.meta.dark {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .lesson {
   color: var(--text);
   margin-top: 12px;
@@ -313,6 +320,112 @@ button.secondary {
 .rank-score {
   color: var(--accent-2);
   font-weight: 700;
+}
+
+.metrics-list {
+  gap: 10px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.metric-row span {
+  color: var(--muted);
+}
+
+.metric-row strong {
+  font-size: 0.98rem;
+}
+
+.triage-banner {
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  display: grid;
+  gap: 10px;
+}
+
+.triage-banner.elevated {
+  background: rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.triage-banner.normal {
+  background: rgba(52, 211, 153, 0.1);
+  border-color: rgba(52, 211, 153, 0.25);
+}
+
+.triage-banner.critical {
+  background: rgba(248, 113, 113, 0.12);
+  border-color: rgba(248, 113, 113, 0.3);
+}
+
+.alert-tag {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.action-list {
+  display: grid;
+  gap: 10px;
+}
+
+.action-item {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  color: var(--text);
+}
+
+.program-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.program-row {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.program-title {
+  font-weight: 700;
+}
+
+.program-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.program-copy {
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
